@@ -1,0 +1,6 @@
+export { default as FmcContent } from './FmcContent'
+export { default as MainFmcSection } from './MainFmcSection/MainFmcSection'
+export { default as ProjectsContainer } from './ProjectsContainer.js'
+export { default as ProjectCard } from './ProjectCard.js'
+export { default as ContactUs } from './ContactUs'
+export { default as HomeAbout } from './HomeAbout'
