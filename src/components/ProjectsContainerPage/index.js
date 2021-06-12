@@ -16,10 +16,10 @@ const index = () => {
             industries, and Client Types. The projects are diversified to cover all developmental and major economic areas with significant investments and commitments"
                 columns={
                     <>
-                        {ProjectsFMC.map(({ id, projectImage, projectName, projectText, linkText, linkTo }) => {
+                        {ProjectsFMC.map(({ id, projectImage, projectName, projectText,  linkTo }) => {
                             return (
                                 <Col key={id} lg={4} md={6} >
-                                    <ProjectCard projectImage={projectImage} projectName={projectName} linkTo={`projects/${id}`} projectText={projectText} linkText={linkText} />
+                                    <ProjectCard projectImage={projectImage} projectName={projectName} linkTo={`projects/${id}`} projectText={projectText}  />
                                 </Col>
                             )
                         })}

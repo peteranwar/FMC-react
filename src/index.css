@@ -35,3 +35,9 @@ a:hover{
     border-radius: 35px;
   background-color: #BB901A;
 }
+
+
+#react-modal-image-img{
+  width: 500px;
+  border-radius: 25px;
+}

@@ -9,7 +9,7 @@ const MainFmcSection = ({children, columns, img, header, ...restProps}) => {
         <MainFmcSectionContainer {...restProps} bgImage={img} >
         <Container>
             <div className="header">{header}</div>
-            <CustomRow>
+            <CustomRow >
                 {columns}
             </CustomRow>
             {children}

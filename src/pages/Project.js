@@ -1,10 +1,11 @@
 import React from 'react'
+import { ProjectContainerPage } from '../components'
 
 const Project = () => {
     return (
-        <div>
-            Project
-        </div>
+        <>
+            <ProjectContainerPage />
+        </>
     )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { CustomArrow, ImageContainer, ProjectCardContainer, TextCard } from './styles/projectCard'
 
-const index = ({projectImage, projectName, projectText, linkText, linkTo}) => {
+const index = ({projectImage, projectName, projectText,  linkTo}) => {
     return (
         <ProjectCardContainer>
             <ImageContainer>
@@ -9,7 +9,7 @@ const index = ({projectImage, projectName, projectText, linkText, linkTo}) => {
             </ImageContainer>
             <TextCard>{projectText}</TextCard>
 
-            <CustomArrow to={linkTo}>{linkText}</CustomArrow>
+            <CustomArrow to={linkTo}>Read</CustomArrow>
         </ProjectCardContainer>
     )
 }
