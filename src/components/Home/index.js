@@ -75,7 +75,7 @@ const HomeContainer = () => {
             </ProjectsContainer>
             {/* CONTACT US SECTION */}
             <ContactUs
-               colorContent="#A5A5A5"
+               colorContent="#A5A5A5" darkIcons={false}
                 imageBgContactUs={contactUsImage}
             >
             </ContactUs>

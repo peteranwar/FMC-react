@@ -11,7 +11,7 @@ import DoctorImg2 from '../../images/doctor-1.jpg'
 const index = () => {
     return (
         <>
-            <HomeAbout header="SERVICE" />
+            <HomeAbout header="SERVICES" />
 
             <MainFmcSection  
                 columns={

@@ -41,7 +41,7 @@ const validationSchema = Yup.object().shape({
 
 });
 
-const ContactUs = ({ imageBgContactUs, colorContent,  ...restProps }) => {
+const ContactUs = ({ imageBgContactUs, colorContent, darkIcons,  ...restProps }) => {
 
     // console.log("form values", formik.touched);
     return (
@@ -71,17 +71,16 @@ const ContactUs = ({ imageBgContactUs, colorContent,  ...restProps }) => {
                     </ContactUsLinksContainer>
                 </>
             }
-
             columns={
                 <>
                     <Col lg={6} className="my-4">
                         <SocialIcons colorContent={colorContent}>
                             <IconsSec>
                                 Follow Us
-                                <IconLink darkIcons href=""><RiFacebookFill /></IconLink>
-                                <IconLink darkIcons href=""><FaInstagram /></IconLink>
-                                <IconLink darkIcons href=""><GrTwitter /></IconLink>
-                                <IconLink darkIcons href=""><GrSnapchat /></IconLink>
+                                <IconLink darkIcons={darkIcons} href=""><RiFacebookFill /></IconLink>
+                                <IconLink darkIcons={darkIcons} href=""><FaInstagram /></IconLink>
+                                <IconLink darkIcons={darkIcons} href=""><GrTwitter /></IconLink>
+                                <IconLink darkIcons={darkIcons} href=""><GrSnapchat /></IconLink>
                             </IconsSec>
                         Enter your information to contact us
 

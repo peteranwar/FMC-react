@@ -9,7 +9,7 @@ const index = () => {
         <>
             <HomeAbout header="Contact Us" />
             {/* CONTACT US SECTION */}
-            <ContactUs colorContent="#3B3B3B"
+            <ContactUs colorContent="#3B3B3B" darkIcons={true}
                 imageBgContactUs={contactUsImage}
             >
             </ContactUs>

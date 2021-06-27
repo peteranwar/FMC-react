@@ -24,19 +24,18 @@ const ProjectContainerPage = () => {
     const projectView = () => {
         ProjectsFMC.filter(project => project.id === +id).map(proFiltred => {
             setProjectFiltred(proFiltred);
-            console.log(projectFiltred)
-
+            // console.log(projectFiltred)
         })
     }
     useEffect(() => {
         projectView()
-    }, [projectFiltred])
+    }, [projectFiltred]);
+
     return (
         <>
             <HomeAbout header="Projects" />
-            { projectFiltred ?
+            {projectFiltred ?
                 <>
-
                     <ProjectContent bgImage={projectImageBg}>
                         <Container>
                             <Row>
@@ -75,11 +74,11 @@ const ProjectContainerPage = () => {
                         <Container>
                             <ProjectGalleryHeader>
                                 <img src={ImgageGallery} alt="image-gallery" />
-                       Project Gallery
-                   </ProjectGalleryHeader>
+                                Project Gallery
+                            </ProjectGalleryHeader>
                             <Row>
-                                <Col lg={2} md={4} sm={6}>
-                                <ImageContainerGallery>
+                                <Col lg={2} md={4} sm={6} >
+                                    <ImageContainerGallery>
                                         <ModalImage
                                             small={projectFiltred.projectImage}
                                             large={projectFiltred.projectImage}
@@ -89,8 +88,8 @@ const ProjectContainerPage = () => {
                                         />
                                     </ImageContainerGallery>
                                 </Col>
-                                <Col lg={2} md={4} sm={6}>
-                                <ImageContainerGallery>
+                                <Col lg={2} md={4} sm={6} >
+                                    <ImageContainerGallery>
                                         <ModalImage
                                             small={projectFiltred.projectImage}
                                             large={projectFiltred.projectImage}
@@ -100,8 +99,8 @@ const ProjectContainerPage = () => {
                                         />
                                     </ImageContainerGallery>
                                 </Col>
-                                <Col lg={2} md={4} sm={6}>
-                                <ImageContainerGallery>
+                                <Col lg={2} md={4} sm={6} >
+                                    <ImageContainerGallery>
                                         <ModalImage
                                             small={projectFiltred.projectImage}
                                             large={projectFiltred.projectImage}
@@ -111,8 +110,8 @@ const ProjectContainerPage = () => {
                                         />
                                     </ImageContainerGallery>
                                 </Col>
-                                <Col lg={2} md={4} sm={6}>
-                                <ImageContainerGallery>
+                                <Col lg={2} md={4} sm={6} >
+                                    <ImageContainerGallery>
                                         <ModalImage
                                             small={projectFiltred.projectImage}
                                             large={projectFiltred.projectImage}
@@ -122,8 +121,8 @@ const ProjectContainerPage = () => {
                                         />
                                     </ImageContainerGallery>
                                 </Col>
-                                <Col lg={2} md={4} sm={6}>
-                                <ImageContainerGallery>
+                                <Col lg={2} md={4} sm={6} >
+                                    <ImageContainerGallery>
                                         <ModalImage
                                             small={projectFiltred.projectImage}
                                             large={projectFiltred.projectImage}
@@ -133,7 +132,7 @@ const ProjectContainerPage = () => {
                                         />
                                     </ImageContainerGallery>
                                 </Col>
-                                <Col lg={2} md={4} sm={6}>
+                                <Col lg={2} md={4} sm={6} >
                                     <ImageContainerGallery>
                                         <ModalImage
                                             small={projectFiltred.projectImage}
@@ -150,16 +149,6 @@ const ProjectContainerPage = () => {
                     </ProjectGallery>
                 </>
                 : <CustomSpinner animation="grow" variant="warning" />}
-            {/* {projectFiltred ? 
-            
-             
-
-             : 
-
-             <div>Loading...</div>
-            
-            
-            } */}
 
 
         </>

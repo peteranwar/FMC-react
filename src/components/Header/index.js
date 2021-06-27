@@ -22,7 +22,6 @@ const HeaderContainer = () => {
     };
     useEffect(() => {
         window.addEventListener('scroll', changeNavbarColor);
-
     }, [])
 
     const headerClasses = () => {

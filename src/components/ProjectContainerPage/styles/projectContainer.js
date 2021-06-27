@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
-import {css} from 'styled-components';
+import { css } from 'styled-components';
 import * as styles from '../../../Global-styles/variables'
-import { appBtn} from '../../../Global-styles'
+import { appBtn } from '../../../Global-styles'
 
 import { Spinner } from 'react-bootstrap'
 
@@ -64,7 +64,6 @@ export const ProjectGalleryHeader = styled.h3`
         color: ${styles.primaryColor};
         font-size: 25px;
         font-weight: bold;
-
         img{
                 max-width: 100%;
                 margin-right: 1rem;
@@ -74,7 +73,15 @@ export const ProjectGalleryHeader = styled.h3`
 
 export const ImageContainerGallery = styled.div`
   margin: 2rem 0;
+  text-align: center;
    img.img-small{
           height: 100px;
+          ${styles.easeInOut}
+          border-radius: 5px;
+          &:hover{
+                  transform: translateY(-10px) scale(1.1);
+                  box-shadow: 0px 15px 20px 0px #cac6bb;
+          }
   }
 `
+

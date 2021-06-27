@@ -13,3 +13,13 @@ export const FooterText = styled.span`
   color: #A5A5A5;
 
 `
+
+export const FooterLink = styled.a`
+   color: ${styles.primaryColor};
+   ${styles.easeInOut}
+   &:hover{
+     border-bottom: 1px solid ${styles.primaryColor};
+     color: ${styles.primaryColor};
+     letter-spacing: .1rem;
+   }
+`
